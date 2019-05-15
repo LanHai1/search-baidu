@@ -107,7 +107,7 @@ $("txt").onfocus = function() {
         return
     }
     // 逗号处理
-    let arr_data = data.split(",")
+    let arr_data = data.split(",").reverse()
     for (let i = 0; i < arr_data.length; i++) {
         renderUl(arr_data[i])
     }
